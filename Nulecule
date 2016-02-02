@@ -1,0 +1,25 @@
+---
+specversion: 0.0.2
+id: jts-app
+
+metadata:
+  name: JTS Atomic App
+  appversion: 0.0.1
+  description: Atomic app for deploying JTS transaction service and JacORB name server
+graph:
+  - name: jts-app
+    params:
+      - name: jacorb_image
+        default: jboss/jacorb-name-server
+      - name: jts_image
+        default: jboss/jts-transaction-service
+      - name: jacorb_host_port
+        default: 3528
+      - name: jts_host_port
+        default: 4710
+    artifacts:
+      kubernetes:
+        - file://artifacts/kubernetes/jts-pod.json
+      docker:
+        - file://artifacts/docker/jacorb-name-server
+          file://artifacts/docker/jts-transaction-service
