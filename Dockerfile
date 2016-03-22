@@ -1,8 +1,8 @@
-FROM projectatomic/atomicapp:0.3.0
+FROM projectatomic/atomicapp:0.4.4
 
 MAINTAINER Gytis Trikleris <gytis@redhat.com>
 
-LABEL io.projectatomic.nulecule.providers="kubernetes" \
+LABEL io.projectatomic.nulecule.providers="kubernetes,docker" \
       io.projectatomic.nulecule.specversion="0.0.2"
 
 ADD /Nulecule /Dockerfile /application-entity/
