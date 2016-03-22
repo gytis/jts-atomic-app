@@ -19,7 +19,7 @@ graph:
         default: 4710
     artifacts:
       kubernetes:
-        - file://artifacts/kubernetes/jts-pod.yaml
+        - file://artifacts/kubernetes/jts-pod.json
       docker:
         - file://artifacts/docker/jacorb-name-server_run
           file://artifacts/docker/jts-transaction-service_run
