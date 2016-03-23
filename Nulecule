@@ -16,7 +16,7 @@ graph:
       - name: jacorb_host_port
         default: 3528
       - name: jts_host_port
-        default: 4710
+        default: 4711
     artifacts:
       kubernetes:
         - file://artifacts/kubernetes/jts-pod.json

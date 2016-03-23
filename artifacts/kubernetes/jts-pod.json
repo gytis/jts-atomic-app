@@ -24,7 +24,7 @@
           "image": "$jts_image",
           "ports": [
             {
-              "containerPort": 4710,
+              "containerPort": 4711,
               "hostPort": $jts_host_port,
               "protocol": "TCP"
             }
