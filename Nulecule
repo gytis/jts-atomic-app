@@ -17,6 +17,8 @@ graph:
         default: 3528
       - name: jts_host_port
         default: 4711
+      - name: proxy_ip
+        default: 192.168.33.10
     artifacts:
       kubernetes:
         - file://artifacts/kubernetes/jts-pod.json
