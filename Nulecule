@@ -20,8 +20,6 @@ graph:
       - name: proxy_ip
         default: 192.168.33.10
     artifacts:
-      kubernetes:
-        - file://artifacts/kubernetes/jts-pod.json
       docker:
         - file://artifacts/docker/jacorb-name-server_run
         - file://artifacts/docker/jts-transaction-service_run
